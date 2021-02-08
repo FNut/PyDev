@@ -1,6 +1,5 @@
 print('Physic Helper')
 print('')
-
 print('1) Скорость, время, расстояние')
 print('2) Плотность, масса, объем')
 print('3) Силы')
@@ -38,7 +37,6 @@ if formsel == ('1'):
 		t = float(input('Введите время (t) : '))
 		s = v * t
 		print('s = ' + str(s))
-
 if formsel == ('2'):
 	print('Плотность, масса, объем')
 	print('')
@@ -70,7 +68,6 @@ if formsel == ('2'):
 		P = float(input('Введите плотность (P) : '))
 		V = m / P
 		print('V = ' + str(V))
-
 if formsel == ('3'):
 	print('Силы')
 	print('')
@@ -96,24 +93,46 @@ if formsel == ('3'):
 		m = float(input('Введите массу: '))
 		ft = m * g
 		print('P = ' + str(ft))
-
 if formsel == ('4'):
 	print('Давление')
 	print('')
-	print('P = Fт / S')
-	ft = float(input('Введите силу тяжести (Fт) : '))
-	s = float(input('Введите площадь (S) : '))
-	P = ft / s
-	print('P = ' + str(P))
 
-
-
-
-
-
-
-
-
-
-
-
+	print('1) Земное')
+	print('2) В жидкости и газе')
+	davsel = input('Выберите формулу: ')
+	if davsel == ('1'):
+                print('Земное давление')
+                print('')
+                print('1) 1 метод')
+                print('2) 2 метод')
+                davmetsel = input('Выберите метод: ')
+                if davmetsel == ('1'):
+                        print('1 метод')
+                        print('')
+                        print('P = Fт / S')
+                        ft = float(input('Введите силу тяжести (Fт): '))
+                        s = float(input('Введите площадь (S): '))
+                        P = ft / s
+                        print('P = ' + str(P))
+                if davmetsel == ('2'):
+                        print('2 метод')
+                        print('')
+                        g = 10
+                        print('p = m * g / s')
+                        m = float(input('Введите массу (m): '))
+                        a = m * g
+                        s = float(input('Введите площадь (S): '))
+                        print('g = ' + str(g))
+                        b = a / s
+                        print('p = ' + str(b))
+        if davsel == ('2'):
+                print('Давление в жидкости и газе')
+                print('')
+                print('p = p * h * g')
+                g = 10
+                ps = float(input('Введите давление (p): '))
+                h = float(input('Введите высоту (h): '))
+                print('g = ' + str(g))
+                pv = ps * h * g
+                print('p = ' + str(pv))
+ext = input('')
