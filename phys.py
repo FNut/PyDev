@@ -96,7 +96,6 @@ if formsel == ('3'):
 if formsel == ('4'):
 	print('Давление')
 	print('')
-
 	print('1) Земное')
 	print('2) В жидкости и газе')
 	davsel = input('Выберите формулу: ')
