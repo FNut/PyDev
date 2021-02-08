@@ -1,31 +1,47 @@
 print('Math Puzzles')
 print('')
-
 print('LVL 1')
 print('2 + 2')
 ans1 = input('Ответ: ')
 if ans1 == ('4'):
-	print('Done')
+	print('Верно')
 	print('')
-	
 	print('LVL 2')
 	print('a = 1')
 	print('b = 2a')
 	ans2 = input('b = ')
 	if ans2 == ('2'):
-		print('Done')
+		print('Верно')
 		print('')
-		
 		print('LVL 3')
 		print('x + x')
 		ans3 = input('Ответ: ')
 		if ans3 == ('2x'):
-			print('Done')
+			print('Верно')
 			print('')
-			
 			print('LVL 3')
 			print('0 / 1')
 			ans3 = input('Ответ: ')
 			if ans3 == ('0'):
-				print('Done')
+				print('Верно')
 				print('')
+				print('LVL 4')
+				print('P = (x.xx)')
+				ans4 = input('Ответ')
+				if ans4 == ('3.14') or ('3,14'):
+                                        print('Верно')
+                                        print('')
+                                        print('LVL 5')
+                                        print('4, 8, 16,...')
+                                        ans5 = input('Ответ: ')
+                                        if ans5 == ('32'):
+                                                print('Верно')
+                                                print('')
+                                                print('LVL 6')
+                                                print('Корень числа 12 (x.x)')
+                                                ans6 = input('Ответ: ')
+                                                if ans6 == ('3.4') or ('3,4'):
+                                                        print('Верно')
+                                                        print('')
+                                                        print('LVL 7')
+ext = input('')
