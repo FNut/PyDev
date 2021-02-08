@@ -2,7 +2,7 @@ import random
 from random import randint
 print('Random PG')
 print('')
-name = []
+name = ['Alex', 'Max']
 print('Name: ', random.choice(name))
 print('Money: ', randint(0, 100))
 print('HP: ', randint(0, 100))
