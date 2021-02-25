@@ -1,6 +1,5 @@
 print('Mind Mapping')
 print('')
-print('')
 q = input('1) ')
 q1 = input('1.1) ')
 q2 = input('1.2) ')
